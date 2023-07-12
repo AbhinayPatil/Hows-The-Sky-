@@ -3,11 +3,14 @@ import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
 import 'package:weatherapp/providers/current_location_provider.dart';
 import 'package:weatherapp/providers/current_weather_provider.dart';
+import 'package:weatherapp/screens/alert_screen.dart';
 import 'package:weatherapp/screens/aqi_screen.dart';
-import 'package:weatherapp/utils/aqi_graph.dart';
+import 'package:weatherapp/utils/aqi_info.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key,});
+  const HomeScreen({
+    super.key,
+  });
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -17,7 +20,6 @@ class _HomeScreenState extends State<HomeScreen> {
   bool isLoading = true;
   String? _currentSubLocality;
   String? _currentLocality;
-  String? _currentPinCode;
   String? _lat;
   String? _lon;
 
@@ -102,7 +104,15 @@ class _HomeScreenState extends State<HomeScreen> {
                                                 : Colors.redAccent.shade100,
                                         size: 18,
                                       ),
-                                      onPressed: () {},
+                                      onPressed: () {
+                                        Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                            builder: (context) =>
+                                                const AlertScreen(),
+                                          ),
+                                        );
+                                      },
                                     ),
                                   ),
 

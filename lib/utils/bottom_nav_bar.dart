@@ -10,10 +10,10 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class _BottomNavBarState extends State<BottomNavBar> {
-  int _currentIndex = 0;
+  int _currentIndex = 1;
   List<Widget> pageList = [
-    HomeScreen(),
-    SearchForecastScreen(),
+    const HomeScreen(),
+    const SearchForecastScreen(),
   ];
 
   @override

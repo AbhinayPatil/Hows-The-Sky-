@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class BarWidget extends StatelessWidget {
+class ElementBox extends StatelessWidget {
   double value;
   String name;
-  BarWidget({super.key, required this.value, required this.name});
+  ElementBox({super.key, required this.value, required this.name});
 
   @override
   Widget build(BuildContext context) {

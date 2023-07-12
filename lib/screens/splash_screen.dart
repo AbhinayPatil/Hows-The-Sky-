@@ -8,7 +8,7 @@ import 'package:weatherapp/providers/current_location_provider.dart';
 import 'package:weatherapp/utils/bottom_nav_bar.dart';
 
 class SplashScreen extends StatefulWidget {
-  SplashScreen({super.key});
+  const SplashScreen({super.key});
 
   @override
   State<SplashScreen> createState() => _SplashScreenState();
@@ -103,7 +103,7 @@ class _SplashScreenState extends State<SplashScreen> {
           _currentPosition!.latitude.toString(),
           _currentPosition!.longitude.toString(),
         );
-        Navigator.push(
+        Navigator.pushReplacement(
           context,
           MaterialPageRoute(
             builder: (context) => const BottomNavBar(),
