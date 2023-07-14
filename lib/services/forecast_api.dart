@@ -34,9 +34,9 @@ class ForecastApi {
           imageUrl:
               'https:${mapResponse['forecast']['forecastday'][i]['day']['condition']['icon']}',
           precipitation:
-              "${mapResponse['forecast']['forecastday'][i]['day']['totalprecip_mm']}mm",
+              "${mapResponse['forecast']['forecastday'][i]['day']['totalprecip_mm']}",
           snowfall:
-              "${mapResponse['forecast']['forecastday'][i]['day']['totalsnow_cm']}cm",
+              "${mapResponse['forecast']['forecastday'][i]['day']['totalsnow_cm']}",
           sunrise: mapResponse['forecast']['forecastday'][i]['astro']
               ['sunrise'],
           sunset: mapResponse['forecast']['forecastday'][i]['astro']['sunset'],
