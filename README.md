@@ -1,16 +1,18 @@
 # weatherapp
+A weather app built in Flutter that provides current weather and forecast of your current location.
 
-A new Flutter project.
+API used - weather Api (https://www.weatherapi.com/)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+Packages Used
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+  -- Geolocator and geocoding packages for location permissions.
+  
+  -- Providers package to handle app data.
+ 
+  -- HTTP package to fetch data from weather API.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+<img  src="https://github.com/AbhinayPatil/Hows-The-Sky-/assets/89311783/7a3ca4cd-bdd9-4e86-a254-42197e6813aa" height="500" />
+<img  src="https://github.com/AbhinayPatil/Hows-The-Sky-/assets/89311783/b82ba7a2-66c7-4f09-b580-1d6cc0a10443" height="500" />
